@@ -4,7 +4,7 @@ import numpy as np
 import cv2
 
 # 이미지 파일을 바이너리 형식으로 읽어서 numpy 배열로 변환
-ff = np.fromfile('poto.jpg', np.uint8)
+ff = np.fromfile('openCV/poto.jpg', np.uint8)
 
 # 바이너리 데이터를 이미지로 디코딩하여 원본 채널 정보에 맞게 읽어옴
 img = cv2.imdecode(ff, cv2.IMREAD_UNCHANGED)
