@@ -20,10 +20,10 @@ def onChange(pos):
 # 트랙바와 이미지를 표시할 윈도우 생성
 cv2.namedWindow("Trackbar Windows")
 
-# 'sigma_s' 트랙바 생성, 최대값은 200, 초깃값은 0, 콜백 함수 onChange 설정
+# 'sigma_s' 트랙바 생성, 0~200, 콜백 함수 onChange 설정
 cv2.createTrackbar("sigma_s", "Trackbar Windows", 0, 200, onChange)
 
-# 'sigma_r' 트랙바 생성, 최대값은 100, 초깃값은 0, 콜백 함수 onChange 설정
+# 'sigma_r' 트랙바 생성, 0~100, 콜백 함수 onChange 설정
 cv2.createTrackbar("sigma_r", "Trackbar Windows", 0, 100, onChange)
 
 # 'sigma_s'의 초기 값을 100으로 설정
